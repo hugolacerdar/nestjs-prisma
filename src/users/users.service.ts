@@ -9,11 +9,11 @@ export class UsersService {
   constructor(private readonly prisma: PrismaService) {}
 
   async findOne(id: string): Promise<User | null> {
-    return undefined;
+    return await this.prisma.user.findUnique({ where: { id } });
   }
 
   async findAll(): Promise<User[]> {
-    return undefined;
+    return await this.prisma.user.findMany();
   }
 
   async create(dto: CreateUserDto): Promise<User> {
