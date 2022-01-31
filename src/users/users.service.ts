@@ -23,10 +23,12 @@ export class UsersService {
   }
 
   async update(id: string, dto: UpdateUserDto): Promise<User> {
-    return undefined;
+    const data: Prisma.UserUpdateInput = { ...dto };
+
+    return await this.prisma.user.update({ where: { id }, data });
   }
 
   async remove(id: string): Promise<User> {
-    return undefined;
+    return await this.prisma.user.delete({ where: { id } });
   }
 }
