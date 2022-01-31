@@ -13,8 +13,9 @@ Quando o assunto são novas implementações, roadmap e dominação do mundo, o 
 ## Expert
 
 | [<img src="https://avatars.githubusercontent.com/u/7906171?v=4" width="75px;"/>](https://github.com/paulosalvatore) |
-| :-: |
-|[Paulo Salvatore](https://github.com/paulosalvatore)|
+| :-----------------------------------------------------------------------------------------------------------------: |
+|                                [Paulo Salvatore](https://github.com/paulosalvatore)                                 |
+
 ## Using Prisma with NestJS
 
-This repository contains de code produced by following (Paulo Salvatore)[https://github.com/paulosalvatore]'s lesson on using Prisma as the ORM for NestJS applications, available for (Rocketseat)[https://www.rocketseat.com.br]'s Experts Club subscribers. 
+This repository contains de code produced by following (Paulo Salvatore)[https://github.com/paulosalvatore]'s lesson on using Prisma as the ORM for NestJS applications, available for (Rocketseat)[https://www.rocketseat.com.br]'s Experts Club subscribers.
