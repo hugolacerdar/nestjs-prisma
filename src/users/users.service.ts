@@ -1,11 +1,14 @@
-import { Injectable } from "@nestjs/common";
-import { User } from "@prisma/client";
-import { CreateUserDto } from "./dto/create-user.dto";
-import { UpdateUserDto } from "./dto/update-user.dto";
+import { Injectable } from '@nestjs/common';
+import { User } from '@prisma/client';
+import { PrismaService } from 'src/prisma/prisma.service';
+import { CreateUserDto } from './dto/create-user.dto';
+import { UpdateUserDto } from './dto/update-user.dto';
 
 @Injectable()
 export class UsersService {
-  async findOne(id: number): Promise<User | null> {
+  constructor(private readonly prisma: PrismaService) {}
+
+  async findOne(id: string): Promise<User | null> {
     return undefined;
   }
 
@@ -17,11 +20,11 @@ export class UsersService {
     return undefined;
   }
 
-  async update(id: number, dto: UpdateUserDto): Promise<User> {
+  async update(id: string, dto: UpdateUserDto): Promise<User> {
     return undefined;
   }
 
-  async remove(id: number): Promise<User> {
+  async remove(id: string): Promise<User> {
     return undefined;
   }
 }

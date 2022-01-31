@@ -5,7 +5,7 @@ import { UpdatePostDto } from './dto/update-post.dto';
 
 @Injectable()
 export class PostsService {
-  async findOne(id: number): Promise<Post | null> {
+  async findOne(id: string): Promise<Post | null> {
     return undefined;
   }
 
@@ -21,11 +21,11 @@ export class PostsService {
     return undefined;
   }
 
-  async update(id: number, dto: UpdatePostDto): Promise<Post> {
+  async update(id: string, dto: UpdatePostDto): Promise<Post> {
     return undefined;
   }
 
-  async remove(id: number): Promise<Post> {
+  async remove(id: string): Promise<Post> {
     return undefined;
   }
 }
